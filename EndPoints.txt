@@ -1,0 +1,172 @@
+----------------------- UserMS -----------------------
+
+1. Get all buyer
+method :- get
+url:- localhost:3333/api/getAll/buyer
+
+2. Get buyer by id
+method :- get
+url:- localhost:3333/api/buyer/B111
+
+3. Buyer register
+method :- post
+url:- localhost:3333/api/buyer/register
+body:- 
+{
+    "buyerId": "B101",
+    "name": "Yuvraj",
+    "email": "yuve@gmail.com",
+    "phoneNumber": "9000900952",
+    "password": "Hello@123"
+}
+
+4. buyer login
+method :- post
+url:- localhost:3333/api/login/buyer/yuve@gmail.com/Hello@123
+
+5. Delete buyer
+method :- delete
+url:- localhost:3333/api/deactivate/buyer/B101
+
+6. Get all seller
+method :- get
+url:- localhost:3333/api/getAll/seller
+
+7. Get seller by id
+method :- get
+url:- localhost:3333/api/seller/S100
+
+
+8. seller register
+method :- post
+url:- localhost:3333/api/seller/register
+body:- 
+{
+    "sellerId": "S104",
+    "name": "Yuvraj",
+    "email": "yuve@gmail.com",
+    "phoneNumber": "9000878980",
+    "password": "Hello@123"
+}
+
+
+9. seller login
+method :- post
+url:- localhost:3333/api/login/seller/yuve@gmail.com/Hello@123
+
+
+10. Delete seller
+method :- delete
+url:- localhost:3333/api/deactivate/seller/S104
+
+
+11. get cart by buyer id
+method :- get
+url:- localhost:3333/api/buyer/getcart/B111
+
+
+12. add to cart
+method :- post
+url:- localhost:3333/api/buyer/addtocart/B111/P101/4
+
+
+13. remove from cart
+method :- post
+url:- localhost:3333/api/buyer/removecart/B111/P101
+
+
+14. rewart point update
+method :- get
+url:- localhost:3333/api/update/RewardPoints/B111/5545
+
+
+15. add to whishlist
+method :- post
+url:- localhost:3333/api/buyer/addtowishlist/B100/P101
+
+
+16. remove to whishlist
+method :- post
+url:- localhost:3333/api/buyer/removewishlist/B100/P102
+
+
+----------------------- ProductMS -----------------------
+
+
+
+
+17. get all product
+method :- get
+url:- localhost:3333/api/product/getAllProducts
+
+18. add product
+method :- post
+url:- localhost:3333/api/product/add/
+
+
+19. get product by id
+method :- get
+url:- localhost:3333/api/product/ById/P102
+
+
+20. get product by name
+method :- get
+url:- localhost:3333/api/product/ByName/Ribbon Glass
+
+
+21. get product  by categaroy
+method :- get
+url:- localhost:3333/api/product/ByCategory/accesories
+
+
+22. delete product by pid
+method :- delete
+url:- localhost:3333/api/product/delete/P103
+
+
+23. update stock
+method :- get
+url:- localhost:3333/api/product/updateStock/P101/1
+
+
+
+24. add to whishlist
+method :- post
+url:- localhost:8300/api/addWishlist/B111/P102
+
+25. remove to whishlist
+method :- post
+url:- localhost:3333/api/removeWishlist/B111/P102
+
+
+----------------------- OrderMS -----------------------
+
+
+
+26. get all order
+method :- get
+url:- localhost:3333/api/get/allOrder
+
+
+27. place order by bid
+method :- post
+url:- localhost:3333/api/placeOrder/B111
+
+
+28. get order by id
+method :- get
+url:- localhost:3333/api/viewOrder/O102
+
+
+29. get order by bid
+method :- get
+url:- localhost:3333/api/getOrder/B111
+
+
+30. place reorder
+method :- post
+url:- localhost:3333/api/reorder/B111/P102
+
+31. add to cart
+method :- post
+url:- localhost:3333/api/addCart/B111/P101/5
